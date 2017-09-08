@@ -2,7 +2,7 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
 
-var Search = React.createClass({
+var Query = React.createClass({
     render: function(){
         return(
             <div className="panel panel-default">
@@ -13,15 +13,15 @@ var Search = React.createClass({
                     <form>
                         <div className="form-group">
                             <label htmlFor="topic">Search</label>
-                            <input type="text" className="form-control" id="topic" placeholder="Search Keyword(s)"/>
+                            <input type="text" className="form-control" id="topic" placeholder="Example input"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="startYear">Start Year</label>
-                            <input type="text" className="form-control" id="startYear" placeholder="YYYY"/>
+                            <input type="text" className="form-control" id="startYear" placeholder="Start Year"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="endYear">End Year</label>
-                            <input type="text" className="form-control" id="endYear" placeholder="YYYY"/>
+                            <input type="text" className="form-control" id="endYear" placeholder="End Year"/>
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
@@ -31,4 +31,4 @@ var Search = React.createClass({
     }
 });
 
-module.exports = Search;
+module.exports = Query;

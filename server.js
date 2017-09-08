@@ -20,13 +20,9 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-//var routes = require("./routes/api-routes.js");
+var routes = require("./routes/api-routes.js");
 
-//app.use("/", routes);
-
-app.get('/', function(req, res) {
-    res.sendFile('./public/index.html');
-});
+app.use("/", routes);
 
 // Connect to Mongoose
 if (process.env.MONGODB_URI) {
