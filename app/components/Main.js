@@ -2,7 +2,7 @@
 var React = require("react");
 
 var Search = require("./Search");
-var Saved = require("./Saved");
+
 
 var Main = React.createClass({
     render: function(){
@@ -13,12 +13,12 @@ var Main = React.createClass({
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
                                 <span className="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse" id="Navbar">
-                            <ul class="nav navbar-nav navbar-right">
+                        <div className="collapse navbar-collapse">
+                            <ul className="nav navbar-nav navbar-right">
                                 <li><a href="#">Saved</a></li>
                                 <li><a href="#">Results</a></li>
                                 <li><a href="#">Search</a></li>
