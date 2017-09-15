@@ -1,10 +1,10 @@
 // Include the Main React Dependencies
-var React = require("react");
-
-var Search = require("./Search");
-
+const React = require("react");
+const Router = require("react-router");
 
 var Main = React.createClass({
+   
+    // Rendering main component that establishes layout and holds child components
     render: function(){
         return(
             <div className="container">
@@ -19,9 +19,8 @@ var Main = React.createClass({
                         </div>
                         <div className="collapse navbar-collapse">
                             <ul className="nav navbar-nav navbar-right">
-                                <li><a href="#">Saved</a></li>
-                                <li><a href="#">Results</a></li>
-                                <li><a href="#">Search</a></li>
+                                <li><a href="/saved">Saved</a></li>
+                                <li><a href="/search">Search</a></li>
                             </ul>
                         </div>
                     </div>
@@ -34,7 +33,7 @@ var Main = React.createClass({
         
                 <div className="row">
                     <div className="col-md-12">
-                        <Search/>
+                        {this.props.children}
                     </div>
                 </div>
             </div>
